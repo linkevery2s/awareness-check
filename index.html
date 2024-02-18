@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>認知症チェックテスト</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            background: #9d5b8b;
+            color: #ffffff;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'vertical',
+            loop: false
+
+        });
+
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide text-center" id="start">
+
+                <h1 class="text-3xl mt-20">認知度チェックテスト</h1><br>
+                <img class="inline w-64" src="./top.png" width="300px">
+
+                <p class="pt-5">
+                    <button
+                        class="bg-blue-500 border border-white-600 hover:bg-blue-400 text-white rounded px-4 py-2">
+                        <a href="#slide2">はじめる</a>
+                    </button>
+                </p>
+
+            </div>
+            <div class="swiper-slide text-center" id="slide2">Slide 2</div>
+
+
+            <div class="swiper-slide text-center">Slide 3</div>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
